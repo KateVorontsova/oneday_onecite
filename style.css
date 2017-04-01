@@ -1,0 +1,199 @@
+
+/*We have some default styles for the body: a background color, removing the padding/margin etc.*/
+body {
+   margin: 0;
+   padding: 0;
+   background: #fffefe;
+   font-family:'Open Sans Condenced Light',sans-serif;
+   font-size: 13px;
+}
+.photo{
+	width: 50px;
+	height: 1000px;
+	float: right;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    border-bottom: 1px solid #103B99;
+}
+
+#headerInside {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#photo{
+	display: inline-block;
+	width: 110px;
+	height: 120px;
+	float: left;
+
+	margin-left: -110px;
+	padding:0;
+}
+
+#Name {
+	display: inline-block;
+    text-align: left;
+    font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+    float: left;
+    margin-left: 0px;
+    font-size: 14px;
+    line-height: 50px;
+    color: #182748;
+}
+
+#nav {
+    height: 100px;
+    float: right;
+	margin-right: -70px;
+    display: flex;
+    align-items: center;
+	flex-direction: row;
+}
+
+#nav a {
+    display: block;
+    font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+    color: #103B99;
+    text-decoration: none;
+    border-left: 1px solid #103B99;
+    border-right: 1px solid #103B99;
+    padding: 0 20px;
+    height: 120px;
+    line-height: 100px;
+	
+}
+
+#nav a:hover {
+    background: #103B99;
+	color: #F96A0A;
+}
+
+#nav a:first-child {
+    border-right: none;
+}
+
+
+#nav a:nth-child(2){
+    border-right: none;
+}
+
+
+/*Here's the "wrapper" that will hold all of our tiles.*/
+.wrap {
+   margin: 10px;
+   margin-top: 20px;
+}
+/*Next up is the box (which corresponds to a tile). */ 
+.box {
+   float: left;   /*The float creates the grid, by ensuring that tiles are automatically laid out in rows.*/
+   position: relative;   /*The relative positioning, used in conjunction with position:absolute on boxInner, makes the boxes remain square regardless of content.*/
+   width: 16.2%;   /*The width and padding-bottom are what determine the size of the box and make it square. */
+   padding-bottom: 20%;
+}
+/*This is the actual content area for each tile.  It is positioned with 10 pixels around each edge.*/
+.boxInner {
+   position: absolute;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
+   font-family: 'Roboto Bold', sans-serif;
+   font-weight: bold;
+   color: #182748;
+}
+
+/*We want our images (which are square) to fill the full tile width, so we use width:100%*/
+.boxInner img {
+   width: 100%;
+}
+/*This definition styles the title text box*/
+.boxInner .titleBox {
+   /*The text box goes at the bottom of each tile, initially hidden out of view via a negative margin-bottom value: */
+   font-family: 'Roboto Bold', sans-serif;
+   color: #182748;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.title{
+	color: #182748;
+	font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+}
+
+.about{
+	display: inline-block;
+	float: right;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 18px;
+	color: #182748;
+	line-height: 2.2;
+	margin-right: 100px;
+}
+	
+.photo{
+	display: inline-block;
+	float: left;
+	width: 300px;
+	height: 400px;
+	
+}
+
+.contacts{
+	font-family: 'Playfair Display', sans-serif;
+	color: #182748;
+	font-size: 18px;
+	line-height: 2.5;
+	margin-right: 120px;
+}
+
+a{
+	 color: #103B99;
+}
+a:hover{
+	color: #F96A0A;
+}
+
+/*Here are our media queries to "snap" the number of tiles per row:*/
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
