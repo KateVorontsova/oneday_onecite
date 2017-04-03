@@ -1,0 +1,162 @@
+body, html {
+	padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', 'Open Sans Condensed', sans-serif, serif;
+	font-size: 13px;
+	background-image: url("12.JPG");
+	}
+	
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.register{
+margin-top: 30px;
+margin-left: 150px;
+margin-right: 50px;
+float: right;
+
+}
+
+
+.button1{
+
+-moz-border-radius:  27px; /* Firefox */
+-webkit-border-radius:  27px; /* Safari 4 */
+border-radius:  27px; /* IE 9, Safari 5, Chrome */
+line-height: 2;
+background-color:#2E2F31;
+box-shadow: inset 0 0 0 1px #2E2F31;
+border: none;
+margin: 1px 5px 3px 2px;
+width: 80px;
+height: 40px;
+color: #ffffff;
+
+
+}
+
+#logo{
+	display: inline-block;
+	width: 110px;
+	height: 100px;
+	float: left;
+    margin-top: 10px;
+	margin-left: 60px;
+	padding:0;
+}
+
+
+
+#nav {
+    height: 100px;
+    float: right;
+	margin: auto;
+	margin-right: 50px;
+    display: flex;
+    align-items: center;
+	flex-direction: row;
+}
+
+#nav a {
+    display: block;
+    font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+    color: #B6BDC6;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 120px;
+    line-height: 120px;
+	
+}
+
+#nav a:hover {
+	color: #ffffff;
+}
+
+.click{
+	
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-left: 60px;
+}
+
+
+.button2 {
+-moz-border-radius:  37px; /* Firefox */
+-webkit-border-radius:  37px; /* Safari 4 */
+border-radius:  37px; /* IE 9, Safari 5, Chrome */
+line-height: 2;
+background-color: black;
+border: none;
+margin: 1px 5px 3px 2px;
+width:170px;
+height: 70px;
+color: #ffffff;
+
+}
+.button3 {
+-moz-border-radius:  37px; /* Firefox */
+-webkit-border-radius:  37px; /* Safari 4 */
+border-radius:  37px; /* IE 9, Safari 5, Chrome */
+line-height: 2;
+background-color: black;
+border: none;
+margin: 1px 5px 3px 2px;
+width: 190px;
+height: 70px;
+color: #ffffff;
+}
+
+
+.button2:hover {
+   background-color: #90D249;
+cursor:pointer;
+}
+
+
+.button3:hover {
+background-color: #90D249;
+cursor:pointer;
+}
+	
+.container{
+  width: 900px;
+  height: 330px;
+  margin-left: 70px;
+  margin-top: 100px;
+
+
+}
+
+h1{
+	font-size: 85px;
+	font-family:'Roboto Bold';
+	line-height: 1;
+	color: white;
+}
+
+.text{
+	font-family: 'Open Sans Condenced Light';
+	font-size: 15px;
+	color: white;
+	line-height: 2;
+}
+
+
+
+
+
+a{
+	text-decoration:none;
+	color: white;
+	line-height: 2;
+	font-family: 'Open Sans Condenced Light';
+}
+
