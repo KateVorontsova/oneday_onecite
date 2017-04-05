@@ -1,0 +1,212 @@
+body, html {
+	padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', 'Open Sans Condensed', sans-serif, serif;
+	width: 1100px;
+	height: 400px;
+	background-color: #ffffff;
+	}
+.container{
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 100px;
+  background-color: #ffffff;
+ 
+}
+.leftbox{
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  float: left;
+  background-image: url("2.jpg");
+  color: #ffffff;
+
+
+
+}
+
+
+.part1{
+	width: 300px;
+	height: 400px;
+	padding-top: 48px;
+	margin-left: 25px;
+}
+
+.wrap {
+   margin: 10px;
+   margin-top: -15px;
+}
+/*Next up is the box (which corresponds to a tile). */ 
+.box1 {
+   float: left;   /*The float creates the grid, by ensuring that tiles are automatically laid out in rows.*/
+   position: relative;   /*The relative positioning, used in conjunction with position:absolute on boxInner, makes the boxes remain square regardless of content.*/
+   width: 40%;   /*The width and padding-bottom are what determine the size of the box and make it square. */
+   padding-bottom: 30%;
+}
+/*This is the actual content area for each tile.  It is positioned with 10 pixels around each edge.*/
+.boxInner1 {
+   position: absolute;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 10px;
+   font-family: 'Roboto Bold', sans-serif;
+   font-weight: bold;
+   color: #182748;
+}
+
+/*We want our images (which are square) to fill the full tile width, so we use width:100%*/
+.boxInner1 img {
+   width: 30%;
+   margin-left:30px;
+}
+/*This definition styles the title text box*/
+.boxInner1 .titleBox1 {
+   /*The text box goes at the bottom of each tile, initially hidden out of view via a negative margin-bottom value: */
+   font-family: 'Open Sans Condenced Light';
+   font-size: 15px;
+   color: #182748;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: 1px;
+   text-align: center;
+   color: white;
+}
+
+hr.hor{
+	margin-top: 180px;
+	margin-left: -25px;
+	border:none; 
+	background:#D8D8D8; 
+	height:1px;
+	width: 300px;
+}
+
+hr.vert{
+    margin-top: -365px;
+	margin-left: 274px;
+	border:none; 
+	background:#D8D8D8; 
+	height:400px;
+	width: 1px;
+	
+}
+
+.filling select{
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 268px;
+	color: #b2b2b2;
+}
+
+.filling{
+	margin-top: -45px;
+    border: none;
+    overflow: hidden; 
+    height: 34px;
+    background: url("menu.png") no-repeat right;
+    width: 240px;
+	color: white;
+   }
+
+
+h1{
+	margin-top: -5px;
+}
+   
+h5{
+	margin-top: -15px;	
+}
+
+.text{
+	font-family: 'Open Sans Condenced Light';
+	font-size: 15px;
+	color: #b2b2b2;
+	margin-bottom: 10px;
+	margin-top: -12px;
+}
+
+
+
+
+.leftbox2{
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin-left: 300px;
+  margin-top: -448px;
+  background-image: url("2.jpg");
+  color: #ffffff;
+}
+
+
+.part2{
+	width: 300px;
+	height: 400px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+/*Next up is the box (which corresponds to a tile). */ 
+.box2 {
+   float: left;   /*The float creates the grid, by ensuring that tiles are automatically laid out in rows.*/
+   position: relative;   /*The relative positioning, used in conjunction with position:absolute on boxInner, makes the boxes remain square regardless of content.*/
+   width: 50%;   /*The width and padding-bottom are what determine the size of the box and make it square. */
+   padding-bottom: 2%;
+}
+/*This is the actual content area for each tile.  It is positioned with 10 pixels around each edge.*/
+.boxInner2 {
+   position: absolute;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
+   font-family: 'Roboto Bold', sans-serif;
+   font-weight: bold;
+   color: #182748;
+}
+
+/*We want our images (which are square) to fill the full tile width, so we use width:100%*/
+.boxInner2 img {
+   width: 100%;
+}
+/*This definition styles the title text box*/
+.boxInner2 .titleBox2 {
+   /*The text box goes at the bottom of each tile, initially hidden out of view via a negative margin-bottom value: */
+   font-family: 'Roboto Bold', sans-serif;
+   color: #182748;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0;
+   left: 10px;
+   right: 0;
+   margin-bottom: 1px;
+   text-align: center;
+}
+
+.rightbox{
+    Width: 200px;
+	height: 400px;
+	display: inline-block;
+	padding:0px;
+	float: right;
+		
+}
+
+
+
+
+
+
