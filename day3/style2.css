@@ -1,0 +1,244 @@
+body, html {
+	padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', 'Open Sans Condensed', sans-serif, serif;
+	width: 100%;
+	background-color: #ffffff;
+	}
+.container{
+  display: flex;
+  flex-flow: row wrap;  
+  width: 97%;
+  justify-content: space-around;
+  margin: 2% 0 0 1%;
+  background-color: #ffffff;
+ 
+}
+
+
+.leftbox, .leftbox2, .rightbox{
+	flex: 1 100%;
+}
+
+.leftbox{
+  background: url("2.jpg") 100% 100% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+
+.part1{
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-end;	
+	padding: 5% 0 1% 0;
+	margin: 0 0 0% 2%;}
+
+
+
+h1, h5, .text, .layer1, .wrap{
+	flex: 1 100%;
+}
+
+h1{
+	margin: 1% 0 5% 0;
+}
+   
+
+.text{
+	font-family: 'Open Sans Condenced Light';
+	font-size: 18px;
+	color: #b2b2b2;
+	margin: 5% 0 0% 0;
+}
+
+.wrap {
+   margin: 0% 2% 2% 2%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+/*Next up is the box (which corresponds to a tile). */ 
+.box1 {
+	flex-basis: 40%;
+}
+
+.boxInner1 img {
+   margin: 10% 5% 10% 25%;
+	flex: 1 1 100%;
+}
+/*This definition styles the title text box*/
+.boxInner1 .titleBox1 {
+   /*The text box goes at the bottom of each tile, initially hidden out of view via a negative margin-bottom value: */
+   font-family: 'Open Sans Condenced Light';
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   margin: 1% 25% 5% 0%;
+}
+
+
+.layer1{
+	align-flex: flex-end;
+	margin: 0% 0 0 -2%;
+	border-top: solid 1px #ffffff;
+	border-bottom: solid 1px #ffffff;
+}
+
+
+.filling select{
+    border-radius: 0;
+    background: transparent;
+    padding: 1%;
+    border: 0;
+    font-size: 15px;
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 115%;
+	color: #b2b2b2;
+}
+
+
+.filling{
+	margin: 5% 0 5% 20%;
+    border: none;
+    overflow: hidden; 
+    background: url("menu.png") no-repeat right;
+    width: 50%;
+	color: white;
+}
+
+
+
+.leftbox2{	
+display: inline-block;
+vertical-align: top;
+  background: url("2.jpg") 100% 100% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0 0 0 0%;
+}
+
+.part2{
+	height: 100%;
+	padding:1% 1% 1% 1%;
+}
+
+.wrap2 {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.box2{
+
+	flex-basis: 40%;
+	align-flex: space-around;
+	
+}
+
+
+.box2:nth-child(odd){
+	border-right: solid 1px #ffffff;
+	margin-left: 9.5%;
+	
+}
+
+.box2:nth-child(even){
+	margin-right: 10%;
+	
+}
+
+
+.box2:nth-child(-n+4){
+	border-bottom: solid 1px #ffffff;
+	
+}
+
+
+.boxInner2 img {
+   margin: 30% 5% 10% 25%;
+	flex: 0 1 100%;
+}
+
+
+
+.boxInner2 .titleBox2 {
+	
+	flex: 0 1 100%;
+   font-family: 'Roboto Bold', sans-serif;
+   font-size: 15px;
+   color: #ffffff;
+   font-weight: bold;
+   text-align: center;
+   margin: 0 15% 5% 0;
+
+}
+
+a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.boxInner2 .titleBox2:hover{
+	color:#E03140;	
+}
+
+
+
+
+
+
+.rightbox img{
+	display: none;
+}
+
+
+
+
+/* Экраны среднего размера */
+@media all and (min-width: 600px) {
+  /* Оба сайдбара располагаются в одной строке */
+ 
+  .leftbox, .leftbox2{
+	flex: 1 50%;
+}
+
+
+.part1{
+	border-right: solid 1px #ffffff;
+}
+
+
+.layer1{
+	border-top: solid 1px #ffffff;
+	border-bottom: none;
+}
+
+
+}
+
+@media all and (min-width: 980px){
+	
+.rightbox{
+	flex-wrap: wrap;
+	align-flex: space-around;
+	
+}
+.rightbox img{
+	display: inline;
+	height: 100%;
+}	
+	
+.leftbox, .leftbox2, .rightbox{
+	flex: 1 33.33%;
+}
+}
+
+
+
