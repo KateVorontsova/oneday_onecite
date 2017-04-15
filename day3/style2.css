@@ -198,12 +198,6 @@ a{
 }
 
 
-@media all and (min-width: 300px){
-	.leftbox{
-	height: 100%;}
-	
-}
-
 /* Экраны среднего размера */
 @media all and (min-width: 600px) {
   /* Оба сайдбара располагаются в одной строке */
