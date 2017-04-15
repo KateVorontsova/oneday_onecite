@@ -61,7 +61,7 @@ h1{
    justify-content: space-between;
    
 }
-/*Next up is the box (which corresponds to a tile). */ 
+
 .box1 {
 	flex-basis: 40%;
 }
@@ -70,9 +70,8 @@ h1{
    margin: 10% 5% 10% 25%;
 	flex: 1 1 100%;
 }
-/*This definition styles the title text box*/
+
 .boxInner1 .titleBox1 {
-   /*The text box goes at the bottom of each tile, initially hidden out of view via a negative margin-bottom value: */
    font-family: 'Open Sans Condenced Light';
    font-size: 16px;
    color: white;
@@ -82,7 +81,6 @@ h1{
 
 
 .layer1{
-	align-flex: flex-end;
 	margin: 0% 0 0 -2%;
 	border-top: solid 1px #ffffff;
 	border-bottom: solid 1px #ffffff;
@@ -137,7 +135,6 @@ vertical-align: top;
 .box2{
 
 	flex-basis: 40%;
-	align-flex: space-around;
 	
 }
 
@@ -169,7 +166,7 @@ vertical-align: top;
 
 .boxInner2 .titleBox2 {
 	
-	flex: 0 1 100%;
+   flex: 0 1 100%;
    font-family: 'Roboto Bold', sans-serif;
    font-size: 15px;
    color: #ffffff;
@@ -200,7 +197,6 @@ a{
 
 /* Экраны среднего размера */
 @media all and (min-width: 600px) {
-  /* Оба сайдбара располагаются в одной строке */
  
   .leftbox, .leftbox2{
 	flex: 1 50%;
