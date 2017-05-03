@@ -1,0 +1,219 @@
+body, html {
+	padding: 0;
+    margin: 0;
+    font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
+	background: url("09.jpg") 100% no-repeat;
+	background-size: cover;
+	}
+
+	
+	
+	
+	
+	
+
+input,
+button {
+  font: inherit;
+  border-radius: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* контейнер навигации */
+
+.flexy-nav {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* пункты меню */
+
+.flexy-nav__items {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 0 4px 0;
+  padding: 4px;
+  text-align: center;
+}
+
+.flexy-nav__items--visible {
+  display: flex;
+  
+}
+
+.flexy-nav__item {
+  background-color: none;
+  border-bottom: solid 1px #e7e7e7;
+}
+
+.flexy-nav__item:last-child {
+  border-bottom: 0;
+}
+
+.brand{
+	color: #4a4a4a;
+	font-weight: bold;
+	text-decoration: none;
+}
+.flexy-nav__link {
+  color: #4a4a4a;
+  padding: 8px;
+  display: block;
+  text-decoration: none;
+}
+
+.flexy-nav__link:hover {
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+
+
+/* переключатель меню */
+
+.flexy-nav__toggle {
+  margin: 0 0 4px 0;
+  padding: 4px;
+  color: #fff;
+  background-color: #f07850;
+  border: none;
+}
+
+.flexy-nav__toggle:hover,
+.flexy-nav__toggle:focus {
+  outline: none;
+  background-color: #c93f11;
+}
+
+/* форма для поля поиска в навигации */
+
+.flexy-nav__form {
+  height: 48px;
+}
+
+.flexy-nav__search {
+  display: block;
+  margin: 10px;
+  padding: 0;
+  height: 30px;
+  line-height: 48px;
+  background-image:url("search.png");
+  background-repeat: no-repeat; 
+}
+
+
+
+.flexy-nav__search:focus {
+  outline: none;
+  border: solid 2px #6d6d6d;
+}
+
+
+.mainpage{
+	text-align: center;
+    line-height: 50px;
+	margin-top: 7%;
+	font-weight: bold;
+}
+
+.mainpage h1{
+	font-size: 60px;
+	font-weight: bolder;
+	margin: 7px;
+
+}
+
+
+button{
+-moz-border-radius:  15px; /* Firefox */
+-webkit-border-radius:  15px; /* Safari 4 */
+border-radius:  15px; /* IE 9, Safari 5, Chrome */
+line-height: 1.8;
+appearance: none;
+background-color:transparent;
+border: 3px solid #f2bf07;
+margin: 5px;
+width: 10%;
+height: 15%;
+}
+
+a{
+	text-decoration:none;
+	color: #4a4a4a;
+	line-height: 2;
+	font-family: 'Playfair Display Regular';
+}
+
+button:hover{
+	background-color: #f2bf07;
+	border: 3px solid #f2bf07;
+}
+
+
+
+/* медиа-запросы */
+
+@media all and (min-width: 768px) {
+  .flexy-nav {
+    flex-direction: row;
+		width: 80%;
+		margin: 0 10%;
+		border-bottom: 1px solid #b2b2b2;
+  }
+
+  .flexy-nav__items {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+
+  }
+
+  
+  
+  .flexy-nav__item:first-child {
+  margin-right: auto;
+  background: none;
+  line-height: 48px;
+}
+  
+  
+  .flexy-nav__item {
+    margin-right: 15px;
+    border-bottom: none;
+	display: block;
+  }
+  
+  
+
+  .flexy-nav__link {
+    padding: 0;
+    line-height: 48px;
+  }
+
+  .flexy-nav__toggle {
+    display: none;
+  }
+
+  .flexy-nav__form {
+    flex: none;
+  }
+
+  .flexy-nav__search {
+    width: 240px;
+    transition: width 0.3s;
+  }
+
+  .flexy-nav__search:focus {
+    width: 360px;
+  }
+}
