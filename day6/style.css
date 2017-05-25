@@ -601,6 +601,9 @@ a{
   .footer{
 	  padding-bottom: 5%;
   }
+	.footer .grid{
+		flex-direction: row;
+	}
   
   .footer .grid-spaceAround{
 	  padding-bottom: 5%;
