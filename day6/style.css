@@ -440,6 +440,7 @@ button:hover{
 
 .features .grid-center .grid-middle{
 	flex-direction: column;
+	margin-left: 150px; 
 	width: 80%;
 }
 
@@ -452,8 +453,8 @@ button:hover{
 	cursor: pointer;
 	border: 2px solid #f2bf07;
 	background-color:#f2bf07;
-	width: 50%;
-	height: 55%;
+	width: 30%;
+	height: 65%;
 	align: center; 
 	margin-left: 10%;
 	margin-top: 2%;
