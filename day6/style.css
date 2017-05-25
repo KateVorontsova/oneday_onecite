@@ -327,6 +327,166 @@ button:hover{
 
 
 
+.features{
+	margin: 5% 0 5% 0;
+	padding-top: 5%;
+	padding-bottom:5%;
+    background-color:#EBEDEF;
+		
+}
+
+.text{
+	margin-top: 5%;
+	text-align: center;
+}
+
+.karousel{
+	margin-bottom:5%;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 10% auto 10%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+#wrapper .d-carousel ul li {
+	background: none;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	-moz-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	box-shadow: 0px 1px 2px 0px #b7b7b7; 
+	padding: 15px;
+	width: 200px;
+	text-align: center;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.d-carousel h4 {
+	margin: 5px 0 1px 0;
+}
+
+.d-carousel .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 190px;
+	height: 290px;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 200px;
+	height: 325px;
+	padding: 0 45px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: -12px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+	margin-right: 5px;
+}
+
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 149px;
+	right: 0;
+	margin-right: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(style/images/blog-arrows.jpg) no-repeat top right;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(style/images/blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-next-horizontal:hover {
+	background-position: bottom right;
+}
+
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 149px;
+	left: 0;
+	margin-left: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(style/images/blog-arrows.jpg) no-repeat top left;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(style/images/blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-prev-horizontal:hover {
+	background-position: bottom left;
+}
+
+.features .grid-center .grid-middle{
+	flex-direction: column;
+	width: 80%;
+}
+
+
+.subscribe-input{
+	border: 2px solid #f2bf07;
+	padding:1%;
+}
+.subscribe-submit{
+	cursor: pointer;
+	border: 2px solid #f2bf07;
+	background-color:#f2bf07;
+	width: 50%;
+	height: 55%;
+	align: center; 
+	margin-left: 10%;
+	margin-top: 2%;
+	padding:1%;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.footer{
+	padding-top: 2%;
+	padding-bottom: 5px;
+    background-color:#ffffff;	
+}
+li{
+	list-style-type: none;
+}
+
+.col-2 h4{
+	margin-left: 40px;
+	font-size: 20px;
+}
+
+.footer .links{
+	
+	padding-bottom: 1px;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.col-3 h4{
+	margin-left: 40px;
+}
+
+
 
 
 
