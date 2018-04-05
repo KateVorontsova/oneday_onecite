@@ -1,0 +1,130 @@
+body, html {
+	padding: 0;
+    margin: 0;
+    font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
+	background-color:#F2F2F2;
+	width: 1280px;
+	height: 800px;
+	}	
+	
+	h1{
+	margin-top: 30px;
+	margin-left: 50px;
+	font-size: 35px;
+	}	
+	
+	.buttons{
+		
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-bottom: 0px;
+	background-color: #5A5A5A;
+	color: white;
+	border: none;
+	width: 185px;
+	height: 50px;
+	font-size: 18px;		
+	}	
+	
+	.saveButton, .cancelButton{
+		
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 185px;
+	    height: 50px;
+	}
+	
+	.cancelButton{	
+		background-color:#d8d8d8;		
+	}
+	
+   #table-product{
+	width: 1000px;
+	height: 750px;
+	margin-left: 50px;
+	margin-right: 60px;
+	margin-top: 30px;
+	background-color: #ffffff;
+	color: #5A5A5A;
+	border-bottom: none;
+}
+
+img{
+	width: 150px;
+	height:100px;
+}
+
+.table-body{
+	width: 100px;
+	text-align: center;
+}
+
+td{
+	border-bottom: 1px solid black;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.idBook{
+	display: none;	
+}
+
+.titleBook{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.PopUpShow, .deleteBook{
+	margin-top: 10px;	
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #B1B1B1;
+	font-size: 16px;
+	width: 140px;
+	height: 30px;
+	}
+	
+.b-popup{
+	padding-top:0px;
+    padding-left: 20px;
+	padding-bottom:10px;
+    margin: 0;
+    font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
+	background-color:#ffffff;
+	width: 50%;
+	min-height: 800px;
+	top: 150px;
+	font-size: 16px;
+	overflow:hidden;
+    position:fixed;	
+}
+
+.b-popup h2{	
+	padding-left: 50px;
+	font-size: 25px;	
+}
+
+.b-popup  .form-group {
+	clear:both; 
+	text-align:left;
+	}
+	
+.b-popup .form-group  label{
+	margin-bottom: 10px;
+	font-size: 18px;	
+}
+
+.b-popup .form-group  input{
+	font-size: 20px;
+	border: 1px solid #B1B1B1;
+	width: 80%;
+	height: 30px;
+}
+
+.b-popup  .editBookId{	
+	display: none;
+}
+
+
+
+
