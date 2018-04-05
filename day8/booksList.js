@@ -10,7 +10,7 @@ function loadPage(){
 	cancelPopUp();
 	 
 	function cancelPopUp2(){
-	$("#popup2").hide();
+	document.getElementById("popup2").style.display = "none";
 	}
 	 
 	cancelPopUp2();
