@@ -3,8 +3,9 @@ function loadPage(){
 	
 	// Скрываем всплывающие окна
 	
-	function cancelPopUp(){
-	$("#popup1").hide();
+		function cancelPopUp(){
+			
+			document.getElementById("popup1").style.display = "none";
 	}
 	cancelPopUp();
 	 
@@ -45,7 +46,7 @@ function loadPage(){
 	//Открываем форму редактирования книги
 	
 	function bookEdit(i){	
-		$("#popup1").show();
+		document.getElementById("popup1").style.display = "";
 		
 		//Заполняем форму редактирования книги
 		
