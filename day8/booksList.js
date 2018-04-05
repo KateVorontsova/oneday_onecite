@@ -1,5 +1,21 @@
 function loadPage(){
 	
+	
+	// Скрываем всплывающие окна
+	
+	function cancelPopUp(){
+	$("#popup1").hide();
+	}
+	cancelPopUp();
+	 
+	function cancelPopUp2(){
+	$("#popup2").hide();
+	}
+	 
+	cancelPopUp2();
+	
+	
+	
  // Создание таблицы с книгами
  
 	createLibrary();
@@ -23,18 +39,7 @@ function loadPage(){
 	row.insertCell(-1).innerHTML = '<button class="PopUpShow" onclick="'+attr+'">' + 'Редактировать' + '</button>' + '<br>' +  '<button class="deleteBook" onclick="'+del+'">' + 'Удалить' + '</button>';
 	};
 	
-	// Скрываем всплывающие окна
 	
-	function cancelPopUp(){
-	$("#popup1").hide();
-	}
-	cancelPopUp();
-	 
-	function cancelPopUp2(){
-	$("#popup2").hide();
-	}
-	 
-	cancelPopUp2();
 };	
 	
 	//Открываем форму редактирования книги
