@@ -86,7 +86,7 @@
 									function cancelFunction1(){
 									var formEl = document.forms.updateBook;
 									formEl.reset();
-									$("#popup1").hide();		
+									document.getElementById("popup1").style.display = "none";		
 									};
 								</script>
 						</p>
@@ -152,7 +152,7 @@
 									row.insertCell(-1).innerHTML = '<span class="titleBook">' + titleBook + '</span>' + "<br>" + '<span class="authorBook">' + authorBook + '</span>' + "<br>"+'<span class="yearBook">' + yearBook + '</span>';
 									row.insertCell(-1).innerHTML = '<button class="PopUpShow" onclick="'+attr+'">' + 'Редактировать' + '</button>' + '<br>' +  '<button class="deleteBook" onclick="'+del+'">' + 'Удалить' + '</button>';
 									//console.log(bookList[Object.keys(bookList).length].cover);				
-									$("#popup2").hide();
+									document.getElementById("popup2").style.display = "none";
 									formEl.reset();
 									};		 
 								</script>		
@@ -161,7 +161,7 @@
 									function cancelFunction2(){
 										var formEl = document.forms.addBook;
 										formEl.reset();
-										$("#popup2").hide();							
+										document.getElementById("popup2").style.display = "none";							
 									};	   
 								</script>
 						</p>	
