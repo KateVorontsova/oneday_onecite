@@ -5,15 +5,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.1/gridlex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
     <title>Книжная полка</title>	
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 </head> 
 
 <body onload="loadPage()">
-	<div class="grid-3-center">
-    <div class="col">
-	<header>
+
+	<script type= "text/javascript" src='books.js'></script>
+		<script type= "text/javascript" src='booksList.js'></script>
+
+<div class="grid">
+<header>
 		<h1> Книжная полка </h1>
 		<button onclick="showAddBook()" class="buttons"> Добавить книгу</button>
 		<script>
@@ -23,14 +26,17 @@
 			 showAddBook();
 		</script>	
 	</header>
-	
 
 
 
-	<div class="mainpage">
-	<div class="grid-3-center">
-    <div class="col-12">
-<!-- Редактирование книги-->
+<div class="product-table">
+			<table id="table-product" cellspacing="0">
+				<tbody id="tbody-table" class="table-body">
+				</tbody>
+			</table>
+			
+</div>		
+		<!-- Редактирование книги-->
 		<div class="b-popup" id="popup1"  style="display:none;">	
 			<h2>Редактирование книги</h2>
 				<div id="window-product-add">
@@ -93,8 +99,8 @@
 					</div>
 				</div>
 		</div>
-	</div>
-</div>
+
+
 
 
 
@@ -102,8 +108,6 @@
 
 <!--Добавление книги-->
 
-<div class="grid-3-center">
-    <div class="col">
 
 		<div class="b-popup" id="popup2"  style="display:none;">
 			<h2>Добавить книгу</h2>
@@ -168,40 +172,13 @@
 					</div>     
 				</div>
 		</div>
-	</div>
+	
+		
+		
+		
+		
 </div>
 
-
-
-
-
-		
-		<!-- Создание таблицы с книгами -->
-
-
-		
-<div class="product-table">
-			<table id="table-product" cellspacing="0">
-				<tbody id="tbody-table" class="table-body">
-				</tbody>
-			</table>
-			
-		
-		</div>
-
-    </div>
-</div>
-
-
-		
-		
-		
-
-
-
-
-	</div>
-		<script type= "text/javascript" src='books.js'></script>
-		<script type= "text/javascript" src='booksList.js'></script>
+	
 </body>
 </html>
