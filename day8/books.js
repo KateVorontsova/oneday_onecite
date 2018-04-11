@@ -65,7 +65,7 @@ function createLibrary (){
 	
 	bookList[0] = new Book(
 	{ id: 0,
-      cover: 'ozon-st.cdn.ngenix.net/multimedia/1013279403.jpg',
+      cover: 'https://ozon-st.cdn.ngenix.net/multimedia/1013279403.jpg',
 	  title:'JavaScript and jQuery',
 	  author: 'Дэвид Сойер Макфарланд',
 	  year: 2016});
