@@ -58,7 +58,7 @@ body, html {
 	
    #table-product{
 	width: 1000px;
-	height: 750px;
+	height: 100%;
 	margin-left: 50px;
 	margin-right: 60px;
 	margin-top: 30px;
