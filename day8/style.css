@@ -13,7 +13,7 @@ body, html {
 	}
 	
 	h1{
-	margin-top: 30px;
+	margin-top: 120px;
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 35px;
@@ -24,7 +24,7 @@ body, html {
 	
 	.buttons{
 		
-	margin-top: 10px;
+	margin-top: 100px;
 	margin-left: 50px;
 	margin-bottom: 0px;
 	background-color: #F6A91F;
