@@ -9,8 +9,6 @@ body, html {
 	
 	header{
 		background-color: #FFF;
-		padding-top: 40%;
-		padding-left: 15%;
 		
 	}
 	
@@ -18,13 +16,6 @@ body, html {
 	font-size: 35px;
 	color: #0a5ab9;
 	}	
-
-.col-9{
-padding-top: 10%;
-padding-bottom:10%;	
-height:100%;
-
-}
 	
 	
 	
