@@ -6,6 +6,11 @@ body, html {
 	height: 100%;
 	}	
 	
+.col-2, .col-9{
+height: 100%;
+}
+
+
 	header{
 		background-color: #FFF;
 		
