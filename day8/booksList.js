@@ -35,7 +35,7 @@ function loadPage(){
 	
 	
 	row.insertCell(-1).innerHTML = '<span class="idBook">' + idBook + '</span>';
-	row.insertCell(-1).innerHTML = '<span class="coverBook">'+'<a href="'+bookList[i].cover+'">' + coverBook + '</a>'+'</span>';
+	row.insertCell(-1).innerHTML = '<span class="coverBook">'+'<a href="'+bookList[i].cover+'">' + '<img src="01.jpg">' + '</a>'+'</span>';
 	row.insertCell(-1).innerHTML = '<span class="titleBook">' + titleBook + '</span>' + "<br>" + '<span class="authorBook">' + authorBook + '</span>' + "<br>"+'<span class="yearBook">' + yearBook + '</span>';
 	row.insertCell(-1).innerHTML = '<button class="PopUpShow" onclick="'+attr+'">' + 'Редактировать' + '</button>' + '<br>' +  '<button class="deleteBook" onclick="'+del+'">' + 'Удалить' + '</button>';
 	};
