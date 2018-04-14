@@ -10,6 +10,9 @@ body, html {
 .col-2, .col-10 {
 min-height: 100vh;
 }
+.col-10{
+background: #fff;
+}
 
 
 	header{
