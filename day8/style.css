@@ -55,17 +55,9 @@ background-color: #fff;
 	}
 	
 	
-	.product-table{
-		margin-right: 10px;
-		margin-left: -40px;
-		width: 70%;
-	height: 100%;
-	margin-top: -20px;
-		
-	}
 	
    #table-product{
-	width: 1000px;
+	width: 100%;
 	height: 100%;
 	margin-left: 50px;
 	margin-right: 60px;
