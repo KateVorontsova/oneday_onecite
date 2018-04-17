@@ -3,12 +3,12 @@ body, html {
         margin: 0;
         font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
 	background-color:#F2F2F2;
-	height: 50%;
-	width: 80%;
+	height: 50vh;
+	width: 80vw;
 	}	
 	
 .col{
-min-height: 60%;
+min-height: 60vh;
 }
 .col-9{
 background-color: #fff;
@@ -17,12 +17,11 @@ background-color: #fff;
 
 	header{
 		background-color: #FFF;
-		height: 100%;
 		
 	}
 	
 	h1{
-	margin-top: 15%;
+	margin-top: 15vh;
 	font-size: 35px;
 	color: #0a5ab9;
 	}	
