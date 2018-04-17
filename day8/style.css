@@ -3,12 +3,12 @@ body, html {
         margin: 0;
         font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
 	background-color:#F2F2F2;
-	height: 100vh;
+	height: 70vh;
 	width: 100vw;
 	}	
 	
 .col-2, .col-9 {
-min-height: 100vh;
+min-height: 60vh;
 }
 .col-10{
 background-color: #fff;
