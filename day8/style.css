@@ -7,10 +7,10 @@ body, html {
 	width: 100vw;
 	}	
 	
-.col-2, .col-9 {
+.col{
 min-height: 60vh;
 }
-.col-10{
+.col-9{
 background-color: #fff;
 }
 
