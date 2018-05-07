@@ -1,0 +1,207 @@
+<!DOCTYPE HTML> 
+
+<html lang="ru">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <title>Книжная полка</title>	
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+</head> 
+
+<body onload="loadPage()">
+	<div class="grid-3-center">
+    <div class="col">
+	<header>
+		<h1> Книжная полка </h1>
+		<button onclick="showAddBook()" class="buttons"> Добавить книгу</button>
+		<script>
+		function showAddBook(){
+		document.getElementById("popup2").style.display = "";
+		}
+			 showAddBook();
+		</script>	
+	</header>
+	
+
+
+
+	<div class="mainpage">
+	<div class="grid-3-center">
+    <div class="col-12">
+<!-- Редактирование книги-->
+		<div class="b-popup" id="popup1"  style="display:none;">	
+			<h2>Редактирование книги</h2>
+				<div id="window-product-add">
+				<form name='updateBook'>
+					<div class="form-group editBookId" >	
+						<p><label for="id1"> id </label></p>
+						<input type="text"  name="id1" value=" "/>		
+					</div>
+					<div class="form-group">
+						<p><label for="title1"> Наименование </label></p>
+						<input type="text"  name="title1" value=" "/>	
+					</div>
+					<div class="form-group">
+						<p><label for="author1"> Автор </label></p>
+						<input type="text"  name="author1"  value=" "/>
+					</div>
+					<div class="form-group">
+						<p><label for="year1"> Год </label></p>
+						<input type="number"  name="year1" min="1000" max="2016"/>					
+					</div>
+					<div class="form-group">
+						<p><label for="cover1"> Изображение </label></p>
+						<input type="url"  name="cover1"  value=" "/>
+					</div>
+				</form> 
+					<div class="form-group">
+						<p> 
+							<button type ="submit" onclick="editFunction()" class="buttons saveButton"> Сохранить </button>
+								<script>		
+									function editFunction() {			 
+									var formEl = document.forms.updateBook;
+									//console.log(formEl);			
+									var i = parseInt(formEl.id1.value);				
+									var item = {id: formEl.id1.value,  title: formEl.title1.value, author: formEl.author1.value, year: formEl.year1.value, cover: formEl.cover1.value};				
+									//console.log(item);
+									//console.log(bookList[item.id]);				
+									//console.log(document.updateBook.title.value);				
+									var book = {id: formEl.id1.value,  title: document.updateBook.title1.value, author: document.updateBook.author1.value, year: document.updateBook.year1.value, cover: document.updateBook.cover1.value};				
+										bookUpdate(item);
+										$("#popup1").hide();
+										formEl.reset();
+									//console.log(document.getElementById("tbody-table").rows[i].cells[2].innerHTML);				
+									var titleBook = bookList[i].title;
+									var authorBook = bookList[i].author;
+									var yearBook = bookList[i].year;
+									var coverBook = bookList[i].cover;				
+									document.getElementById("tbody-table").rows[i].cells[2].innerHTML = '<span class="titleBook">' + titleBook + '</span>' + "<br>" + '<span class="authorBook">' + authorBook + '</span>' + "<br>"+'<span class="yearBook">' + yearBook + '</span>'+ "<br>"+'<span class="coverBook">' + '<a href="+bookList[Object.keys(bookList).length].cover+">' + coverBook + '</a>'+'</span>';
+									//console.log(document.getElementById("tbody-table").rows[i].cells[2].innerHTML);           
+									};			
+								</script>		
+							<button onclick="cancelFunction1()" class="buttons cancelButton">Отменить</button>
+								<script>			
+									function cancelFunction1(){
+									var formEl = document.forms.updateBook;
+									formEl.reset();
+									document.getElementById("popup1").style.display = "none";		
+									};
+								</script>
+						</p>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!--Добавление книги-->
+
+<div class="grid-3-center">
+    <div class="col">
+
+		<div class="b-popup" id="popup2"  style="display:none;">
+			<h2>Добавить книгу</h2>
+				<div id="window-product-add">
+				<form name='addBook'>
+					<div class="form-group">	
+						<p><label for="title2"> Наименование </label></p>
+						<input type="text" name="title2" id= "title" value=" "/>		
+					</div>
+					<div class="form-group">
+						<p><label class="form-label" for="author2"> Автор </label></p>
+						<input type="text" name="author" id= "author2" value=" "/>
+					</div>
+					<div class="form-group">
+						<p><label class="form-label" for="year2"> Год </label></p>
+						<input type="number" name="year2" min="1000" max="2017">
+					</div>
+					<div class="form-group">
+						<p><label class="form-label" for="cover2"> Изображение </label></p>
+						<input type="url" name="cover2" id= "cover"  value=" "/>
+					</div>
+				</form>
+					<div class="form-group">
+						<p>
+							<button type="submit" onclick="addFunction()" class="buttons saveButton">Сохранить</button>
+								<script>			
+									function addFunction() {				
+									var formEl = document.forms.addBook;
+									//console.log(formEl);			
+									var item = {id: Object.keys(bookList).length+1,  title: formEl.title2.value, author: formEl.author2.value, year: formEl.year2value, cover: formEl.cover2.value};				
+									//console.log(item.id);				
+									createBook(item);				
+									var tableBodyEl = document.getElementById("tbody-table");
+									var row = tableBodyEl.insertRow();	
+									var i=parseInt(item.id);	
+									var attr = "bookEdit("+i+")";
+									var del = "bookDelete("+i+")"; 
+									var idBook = bookList[Object.keys(bookList).length].id;
+									var titleBook = bookList[Object.keys(bookList).length].title;
+									var authorBook = bookList[Object.keys(bookList).length].author;
+									var yearBook = bookList[Object.keys(bookList).length].year;	
+									var coverBook = bookList[Object.keys(bookList).length].cover;	
+									
+									row.insertCell(-1).innerHTML = '<span class="idBook">' + idBook + '</span>';			 
+									row.insertCell(-1).innerHTML ='<span class="coverBook">' + '<a href="+bookList[Object.keys(bookList).length].cover+">' + coverBook + '</a>'+'</span>';	
+									row.insertCell(-1).innerHTML = '<span class="titleBook">' + titleBook + '</span>' + "<br>" + '<span class="authorBook">' + authorBook + '</span>' + "<br>"+'<span class="yearBook">' + yearBook + '</span>';
+									row.insertCell(-1).innerHTML = '<button class="PopUpShow" onclick="'+attr+'">' + 'Редактировать' + '</button>' + '<br>' +  '<button class="deleteBook" onclick="'+del+'">' + 'Удалить' + '</button>';
+									//console.log(bookList[Object.keys(bookList).length].cover);				
+									document.getElementById("popup2").style.display = "none";
+									formEl.reset();
+									};		 
+								</script>		
+							<button onclick = "cancelFunction2()" id="cancelButton2" class="buttons cancelButton">Отменить</button>
+								<script>	
+									function cancelFunction2(){
+										var formEl = document.forms.addBook;
+										formEl.reset();
+										document.getElementById("popup2").style.display = "none";							
+									};	   
+								</script>
+						</p>	
+					</div>     
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+		
+		<!-- Создание таблицы с книгами -->
+
+
+		
+<div class="product-table">
+			<table id="table-product" cellspacing="0">
+				<tbody id="tbody-table" class="table-body">
+				</tbody>
+			</table>
+			
+		
+		</div>
+
+    </div>
+</div>
+
+
+		
+		
+		
+
+
+
+
+	</div>
+		<script type= "text/javascript" src='books.js'></script>
+		<script type= "text/javascript" src='booksList.js'></script>
+</body>
+</html>

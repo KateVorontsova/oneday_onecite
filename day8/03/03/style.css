@@ -1,0 +1,220 @@
+ html {
+	margin-top:20px;
+        margin-left: 50px;
+        font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
+	background-color:#F2F2F2;
+	width: 80vw;
+	box-shadow: 20px 20px 7px #B1B1B1;
+	font-family: 'Philosopher', sans-serif;
+	}	
+	body{
+		padding:0;
+		margin:0;
+		font-family: 'Philosopher', sans-serif;
+	}
+		
+	
+.col-3{
+min-height: 40vh;
+background-color: #fff;
+}
+
+.col{
+min-height: 40vh;
+background-color: #FDDF02;
+}
+
+
+
+
+	.col header{
+		background-color: #FFF;
+		height: 30%;
+		
+	}
+	
+	h1{
+	font-size: 35px;
+	color: #000000;
+	margin-top: 80px;
+	}	
+	
+	
+	
+	
+	.buttons{
+		
+	margin-top: 30vh;
+		margin-left: 40px; 
+	margin-bottom: 0px;
+	background-color: #FDDF02;
+	color: #000000;
+	border: none;
+	width: 185px;
+	height: 50px;
+	font-size: 18px;
+    border-radius: 10px;	
+	font-family: 'Philosopher', sans-serif;
+	}	
+	
+	
+	.saveButton, .cancelButton{
+		
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 185px;
+	    height: 50px;
+		border-radius: 10px;
+		font-family: 'Philosopher', sans-serif;
+		
+		
+	}
+	
+	.saveButton{
+		background-color: #fff;
+	}
+	
+	.cancelButton{
+		background-color: black;
+		color: #fff;
+	}
+	
+	
+	.buttons:hover{
+		box-shadow: 5px 5px 7px #B1B1B1;
+		cursor: pointer;
+	}
+	
+
+	
+	
+	
+   #table-product{
+	 width: 50vw;
+	   height: 40vh;
+	background-color: #ffffff;
+	color: #5A5A5A;
+	border-bottom: none;
+	margin-top: 30px;
+	margin-left:60px;
+	margin-right:50px;
+}
+
+img{
+	width: 60px;
+	height:90px;
+	
+}
+
+img:hover{
+	box-shadow: 5px 5px 7px #B1B1B1;
+}
+
+
+
+.table-body{
+	margin-top:10%;
+	width: 100%;
+	text-align: center;
+}
+
+
+td{
+	background-color: #fff;
+	border-bottom: 15px solid #FDDF02;
+	border-top: 15px solid #FDDF02;
+	padding: 5px;
+	font-size: 18px;
+	
+}
+
+
+
+
+
+
+.idBook{
+	display: none;	
+}
+
+.titleBook{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.PopUpShow, .deleteBook{
+	margin-top: 10px;	
+	border: none;
+	font-size: 16px;
+	width: 140px;
+	height: 30px;
+	border-radius: 10px;
+	font-family: 'Philosopher', sans-serif;
+	}
+	
+	.PopUpShow{
+		background-color:#FDDF02;
+        color: #000000;		
+	}
+	
+	.deleteBook{
+		background-color:#000000;
+        color: #fff;
+	}
+	
+	
+	
+	.PopUpShow:hover, .deleteBook:hover{
+		
+		box-shadow: 5px 5px 7px #B1B1B1;
+		cursor: pointer;
+	}
+	
+.b-popup{
+	
+    margin-left: 60px;
+    font-family: 'Roboto Bold', 'Open Sans Condensed', sans-serif, serif;
+	background-color:#FDDF02;
+	width: 55vw;
+	min-height: 40vh;
+	top: 20px;
+	font-size: 16px;
+	overflow:hidden;
+    position:fixed;	
+}
+
+.b-popup h2{	
+	padding-left: 50px;
+	font-size: 25px;	
+}
+
+.b-popup  .form-group {
+	clear:both; 
+	text-align:left;
+	}
+	
+.b-popup .form-group  label{
+	margin-bottom: 10px;
+	font-size: 18px;	
+}
+
+.b-popup .form-group  input{
+	font-size: 20px;
+	border: 1px solid #B1B1B1;
+	width: 80%;
+	height: 30px;
+}
+
+input:hover{
+	box-shadow: 5px 5px 7px #B1B1B1;
+	cursor: pointer;
+}
+
+
+
+.b-popup  .editBookId{	
+	display: none;
+}
+
+
+
